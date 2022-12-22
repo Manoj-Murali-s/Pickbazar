@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap'); 
+
+.btn.green {
+
+    background: #009f7f;
+}
+
+.btn.green:hover {
+    background-color: #006954;
+}
+
+.baker {
+    font-size: 48px;
+
+}
+
+.bakersm {
+    font-size: 30px;
+}
+
+.border.border-muted.px-2:hover {
+    color: #fff;
+
+}
+
+.card-text.productprice {
+    font-weight: 550;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   
+  }
+
+  .text-muted.productcaption {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 14px;
+  }
+  
+button.list-group-item.d-flex.list-group-item-action {
+    align-items: center;
+    justify-content: center;
+}
+
+button.list-group-item.d-flex.list-group-item-action.actv {
+    border-bottom: 3px solid #009f7f;
+}
+
+a.btn.addtocart.btn-block {
+    background: #009f7f;
+    color: #fff;
+}
+
+a.btn.addtocart.btn-block:hover {
+    background: #009f7f;
+
+}
+
+/* bakery image */
+.pt-5.bg-white {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+button#dropdownMenuButton {
+
+    color: #009f7f;
+}
+
+.btn.btngre {
+    background-color: #009f7f;
+    color: #fff;
+}
+
+.border.border-muted:hover {
+    background-color: #0d9176;
+}
+
+.btn.btngre:hover {
+    color: #fff;
+    background-color: #0d9176;
+}
+
+.form-control.text-center:hover {
+    background-color: #cecece;
+}
+.form-control.text-center.lgsrch{
+    border-radius: 10px 1px 1px 10px;
+}
+.form-control.text-center.w-full {
+    border-radius: 10px;
+}
+
+.btn.my-2.my-sm-0.srch {
+    border-radius: 0px 10px 10px 0px;
+}
+
+/* #loadMore {
+    width: 200px;
+    color: #fff;
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    background-color: #009f7f;
+    transition: .3s;
+} */
+button#btn{ 
+    background-color: #009f7f;
+    border-radius: 10px;
+    color: #fff;
+    display: block;
+    transition: .3s;
+    padding: 10px;
+    margin: 20px auto;
+    width: 200px;
+}
+
+
+/* .noContent {
+    color: #000 !important;
+    background-color: transparent !important;
+    pointer-events: none;
+} */
+
+button#dropdownMenuButton {
+    border: 1px solid;
+}
+
+.cardd:hover {
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.1);
+    -webkit-transition: box-shadow 0.3s ease-in;
+}
+
+/* .cardd {
+    border: none;
+    box-shadow: 0px 0px 0px rgba(3, 3, 3, 0.633);
+    -webkit-transition: box-shadow .4s ease-out;
+    box-shadow: .4px 1.9px 5px rgba(5, 5, 5, 0.591);
+
+} */
+
+.asd {
+    background-color: #009f7f;
+    right: 0%;
+    top: 50%;
+    border-radius: 14px 0 0 14px;
+}
+
+.asdp {
+    color: #009f7f;
+
+    border-radius: 7px;
+    background-color: #fff;
+}
+
+a.dropdown-item.activepage {
+    color: #009f7f;
+
+}
+
+/* list items */
+.imgouter {
+    height: fit-content;
+    width: 80%;
+}
+
+.imgitem1 {
+    width: 70%;
+    height: 80%;
+}
+
+.imgitem2 {
+    width: 70%;
+    height: 80%;
+}
+
+.imgitem3 {
+    width: 70%;
+    height: 80%;
+}
+
+.imgitem4 {
+    width: 70%;
+    height: 80%;
+}
+
+.imgitem5 {
+    width: 70%;
+    height: 80%;
+}
+
+.imgitem6 {
+    width: 70%;
+    height: 80%;
+}
+
+.imgitem7 {
+    width: 70%;
+    height: 80%;
+}
+
+.imgitem8 {
+    width: 70%;
+    height: 80%;
+}
+
+.imgitem9 {
+    width: 70%;
+    height: 80%;
+}
+
+.imgitem10 {
+    width: 70%;
+    height: 80%;
+}
+
+.imgitem11 {
+    width: 70%;
+    height: 80%;
+}
+
+.imgitem12 {
+    width: 70%;
+    height: 80%;
+}
+
+/* for list option  */
+
+
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+ 
+.overlay { 
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 20%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  @media screen and (max-width:1000px) {
+    .d-flex.fixed-top.mb-10.justify-content-center.d-lg-flex.d-md-none.d-sm-none.d-none{
+        background-color: transparent;
+    }
+    
+  }
+  @media screen and (min-width:1000px) {
+    .d-flex.fixed-top.mb-10.justify-content-center.d-lg-flex.d-md-none.d-sm-none.d-none{
+        background-color: white;
+    }
+    
+  }
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
+    /* for list option end  */
+
+
+/* login pop up */
+/* button.btn.btn-block.lgbtn {
+    background-color: #0d9176;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+
+}
+
+
+ */
+ button.btn.btn-primary.btngg.btn-block a{
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+
+}
+button.btn.btnmbl.btn-secondary.btn-block {
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+
+}
+button:hover{
+    text-decoration: none;
+}
+.p-3.loginpopinsd {
+    margin: auto;
+    width: 100%;
+}
+/* login pop up close */
+
+
+
+/* for filter overlay  */
+.filter {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+   
+    background-color: rgba(255, 255, 255, 0.804);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .filter-content {
+    position: relative;
+    top: 10%;
+    width: 100%;
+    text-align: left;
+    margin-top: 30px;
+  }
+  
+  .filter a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .filter a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .filter .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .filter a {font-size: 20px}
+    .filter .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
+
+  /* filter overlay ends  */
+
+
+
+
+

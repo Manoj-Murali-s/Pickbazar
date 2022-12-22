@@ -1,0 +1,2516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pick bazaar</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- fonts -->
+    <link href="https://fonts.cdnfonts.com/css/foobar-pro" rel="stylesheet">
+    <!-- font for + -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <!-- icon -->
+    <link rel="shortcut icon"
+        href="https://play-lh.googleusercontent.com/wMxfRJSxHMaFLniNnsuj_3B7CnHCsV7ragZvogo9MaI55y0GTA-JTSSCkMj9v7GpaIY"
+        type="image/x-icon">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;1,300;1,400;1,600&display=swap"
+        rel="stylesheet">
+
+</head>
+
+
+
+
+
+
+
+
+
+
+<body class="bg-light" id="body">
+
+
+
+    <header class="d-flex fixed-top mb-10 justify-content-center d-lg-flex d-md-none d-sm-none d-none">
+        <div class="d-flex justify-content-between">
+            <div class=" d-flex col-lg-4 justify-content-around">
+                <img src="image/PickBazar.webp" class="my-3 col-lg-8 d-none d-lg-block" alt="">
+
+
+                <div class="my-auto d-lg-block d-none">
+                    <button class="btn  dropdown-toggle  btn-outline-muted  px-3 mt-2" type="button"
+                        id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="image/icons8-confectionery-20.png" class="pr-2 alt=">Bakery</button>
+
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#"><img src="image/icons8-apple-20.png" class="pr-2"
+                                alt="">Grocery</a>
+                        <a class="dropdown-item disabled activepage" href="#"><img
+                                src="image/icons8-confectionery-20.png" class="pr-2 alt=">Bakery</a>
+                        <a class=" dropdown-item" href="#"><img src="image/icons8-cosmetics-20.png" class="pr-2" alt="">
+                            Makeup</a>
+                        <a class=" dropdown-item" href="#"><img src="image/icons8-bags-20.png" class="pr-2" alt="">
+                            Bags</a>
+                        <a class=" dropdown-item" href="#"><img src="image/icons8-clothes-20.png" class="pr-2" alt="">
+                            Clothing</a>
+                        <a class=" dropdown-item" href="#"><img src="image/icons8-furniture-20.png" class="pr-2"
+                                alt="">Furniture</a>
+                        <a class=" dropdown-item" href="#"><img src="image/icons8-flax-seeds-20.png" class="pr-2"
+                                alt="">Daily Needs</a>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <nav class="navbar navbar-expand-sm navbar-light  mt-3">
+
+
+
+                <div class="collapse navbar-collapse  font-weight-bold d-sm-none d-md-none  d-xs-none d-lg-block text-secondary"
+                    id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto pr-2">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Offers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#" aria-disabled="true">Contact</a>
+                        </li>
+                    </ul>
+
+                    <button type="button" class="btn btngre mr-3"> Become a seller</button>
+
+                    <!-- <a href="login.html">  </a> -->
+                    <button type="button" data-toggle="modal" data-target="#loginpop" class="btn btngre "> Join</button>
+
+
+                </div>
+
+            </nav>
+
+
+
+
+
+        </div>
+    </header>
+
+
+    <!-- header for small screen  -->
+    <div class="sticky-top">
+        <div class="d-lg-none bg-white d-flex align-item-center justify-content-around" style="border-bottom: 0.5px solid lightgray; ">
+            <img src="image/PickBazar.webp" style="width: 50%;" class="py-3" alt="Pick Bazaar">
+          
+        </div>
+
+        <div class="d-md-flex d-lg-none d-flex justify-content-between bg-white py-2">
+            <div class="px-3">
+                <button class="btn btn-outline-secondary" cursor:"pointer" onclick="openFilter()" type="button">
+                    <img src="image/icon/slider-24.png" alt=""> Filter
+                </button>
+            </div>
+
+            <div class="px-3">
+                <button class="btn  dropdown-toggle btn-outline-muted px-3" type="button" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="image/icons8-confectionery-20.png" class="pr-2 alt=">Bakery</button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#"><img src="image/icons8-apple-20.png" class="pr-2"
+                            alt="">Grocery</a>
+                    <a class="dropdown-item disabled activepage" href="#"><img src="image/icons8-confectionery-20.png"
+                            class="pr-2 alt=">Bakery</a>
+                    <a class=" dropdown-item" href="#"><img src="image/icons8-cosmetics-20.png" class="pr-2" alt="">
+                        Makeup</a>
+                    <a class=" dropdown-item" href="#"><img src="image/icons8-bags-20.png" class="pr-2" alt="">
+                        Bags</a>
+                    <a class=" dropdown-item" href="#"><img src="image/icons8-clothes-20.png" class="pr-2" alt="">
+                        Clothing</a>
+                    <a class=" dropdown-item" href="#"><img src="image/icons8-furniture-20.png" class="pr-2"
+                            alt="">Furniture</a>
+                    <a class=" dropdown-item" href="#"><img src="image/icons8-flax-seeds-20.png" class="pr-2"
+                            alt="">Daily Needs</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+
+    <!-- header for smaller screen ends  -->
+
+
+    <!-- for smaller screen -->
+    <div class="d-lg-none" id="searchsmall">
+        <form class="form-inline d-flex justify-content-center mx-3 mt-3">
+            <input class="form-control text-center w-full col-md-9 col-sm-9 col-9" type="search" aria-label="Search" placeholder="&#128269 Search Your product here">
+            <!-- <button class="btn my-2 my-sm-0 srch" style="width: 6.5rem; color:#fff;background-color: #009f7f;"
+                type="submit"><i class="fa fa-search pr-2"></i> Search</button> -->
+        </form>
+
+    </div>
+
+
+    <!-- heading para -->
+    <div class=" pt-5 bg-white d-none d-lg-block" style="background-image: url(image/bakery.jpg);">
+        <div class="text-center mt-5 d-none d-lg-block d-md-none">
+            <h1 class="mt-8 baker font-weight-bold ">Get Your Bakery Items Delivered</h1>
+            <h5 class="text-md mt-3">Get your favorite bakery items baked and delivered to your doorsteps at any time
+            </h5>
+        </div>
+
+        <!-- search -->
+        <div class="d-none d-lg-block">
+            <form class="form-inline d-flex justify-content-center my-lg-0 pb-5 pt-3">
+                <input class="form-control text-center lgsrch" type="search" placeholder="Search Your product here"
+                    style="width:30rem ;" aria-label="Search">
+                <button class="btn my-2 my-sm-0 srch" style="width:10rem; color:#fff;background-color: #009f7f; " } ;
+                    type="submit"> <i class="fa fa-search pr-2"></i>Search</button>
+            </form>
+        </div>
+    </div>
+    <!-- heading para close -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- cards -->
+    <div class=" mt-4 d-flex justify-content-center">
+
+        <div class=" row col-lg-12 d-flex justify-content-center ">
+
+            <!-- card 1 -->
+            <div class=" col-lg-2 col-md-3 col-sm-6 col-10 card-deck" data-bs-toggle="tooltip" data-bs-placement="right"
+                title="Orange Juice">
+                <div class="card mb-4 cardd ">
+                    <div class="d-flex justify-content-between m-3">
+                        <div>
+
+                        </div>
+                        <div class="border border-muted px-2"
+                            style="font-family: 'Oswald', sans-serif; font-size: larger;border-radius: 5px;">+</div>
+                    </div>
+                    <div class="d-flex flex-column justify-content-between h-100" data-toggle="modal"
+                        data-target="#item1">
+                        <div>
+                            <img src="image/image1.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="px-3">
+
+
+                            <p class="card-text productprice"> $1.80<p>
+                                    <p class="text-muted productcaption">Orange Juice</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- card 2 -->
+            <div class=" col-lg-2 col-md-3 col-sm-6 col-10 card-deck" data-bs-toggle="tooltip" data-bs-placement="right"
+                title="Pomegranate Juice">
+                <div class="card mb-4 cardd">
+                    <div class="d-flex justify-content-between m-3">
+                        <div> <span class="badge badge-success"></span></div>
+                        <div class="border border-muted px-2"
+                            style="font-family: 'Oswald', sans-serif; font-size: larger;border-radius: 5px;">+</div>
+                    </div>
+                    <div class="d-flex flex-column justify-content-between h-100" data-toggle="modal"
+                        data-target="#item2">
+                        <div><img src="image/image2.jpg" class=" card-img-top " alt="...">
+                        </div>
+                        <div class="px-3">
+
+
+                            <p class="card-text productprice">$80 &nbsp;<s>$85</s></p>
+                            <p class="text-muted productcaption">Pomegranate Juice</p>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- card 3 -->
+            <div class="col-lg-2 col-md-3 col-sm-6 col-10 card-deck" data-bs-toggle="tooltip" data-bs-placement="right"
+                title="Kirkland Lemonade">
+                <div class="card mb-4 cardd ">
+                    <div class="d-flex justify-content-between m-3 ">
+                        <div><span class="badge badge-success">22%</span></div>
+                        <div class="border border-muted px-2"
+                            style="font-family: 'Oswald', sans-serif; font-size: larger;border-radius: 5px;">+</div>
+                    </div>
+                    <div class="d-flex flex-column justify-content-between h-100" data-toggle="modal"
+                        data-target="#item3">
+                        <div> <img src="image/image3.jpg" class="card-img-top " alt="...">
+                        </div>
+                        <div class="px-3">
+
+
+                            <p class="card-text productprice productname">$120</p>
+                            <p class="text-muted productcaption">Kirkland Lemonade</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- card 4 -->
+            <div class="col-lg-2 col-md-3 col-sm-6 col-10 card-deck" data-bs-toggle="tooltip" data-bs-placement="right"
+                title="Sun Tropics Mango">
+                <div class="card mb-4 cardd ">
+                    <div class="d-flex justify-content-between  m-3 ">
+                        <div><span class="badge badge-success">22%</span></div>
+                        <div class="border border-muted px-2"
+                            style="font-family: 'Oswald', sans-serif; font-size: larger;border-radius: 5px;">+</div>
+                    </div>
+                    <div class="d-flex flex-column justify-content-between h-100" data-toggle="modal"
+                        data-target="#item4">
+                        <div> <img src="image/image4.jpg" class="card-img-top " alt="...">
+                        </div>
+                        <div class="px-3">
+
+
+
+                            <p class="card-text productprice d-flex  align-bottom pr-1">$20 &nbsp;<s
+                                    class="text-muted">$25</s></p>
+                            <p class="text-muted productcaption">Sun Tropics Mango</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- card 5 -->
+            <div class="col-lg-2 col-md-3 col-sm-6 col-10 card-deck" data-bs-toggle="tooltip" data-bs-placement="right"
+                title="Juicery Citrus">
+                <div class="card mb-4 cardd">
+                    <div class="d-flex justify-content-between  m-3">
+                        <div></div>
+                        <div class="border border-muted px-2"
+                            style="font-family: 'Oswald', sans-serif; font-size: larger;border-radius: 5px;">+</div>
+                    </div>
+                    <div class="d-flex flex-column justify-content-between h-100" data-toggle="modal"
+                        data-target="#item5">
+                        <div> <img src="image/image5.jpg" class="card-img-top " alt="...">
+                        </div>
+                        <div class="px-3">
+
+
+                            <p class="card-text productprice">$20</p>
+                            <p class="text-muted productcaption">Juicery Citrus</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- card 6 -->
+            <div class="col-lg-2 col-md-3 col-sm-6 col-10 card-deck" data-bs-toggle="tooltip" data-bs-placement="right"
+                title="Kirkland Cranberry Cocktail">
+                <div class="card mb-4 cardd">
+                    <div class="d-flex justify-content-between  m-3">
+                        <div></div>
+                        <div class="border border-muted px-2"
+                            style="font-family: 'Oswald', sans-serif; font-size: larger;border-radius: 5px;">+</div>
+                    </div>
+                    <div class="d-flex flex-column justify-content-between h-100" data-toggle="modal"
+                        data-target="#item6">
+                        <div> <img src="image/image6.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="px-3">
+
+
+                            <p class="card-text productprice">$9.80</p>
+                            <p class="text-muted productcaption">Kirkland Cranberry Cocktail</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- card 7 -->
+            <div class="col-lg-2 col-md-3 col-sm-6 col-10 card-deck" data-bs-toggle="tooltip" data-bs-placement="right"
+                title="Brewed Organic Green Tea">
+                <div class="card mb-4 cardd">
+                    <div class="d-flex justify-content-between m-3">
+                        <div></div>
+                        <div class="border border-muted px-2"
+                            style="font-family: 'Oswald', sans-serif; font-size: larger;border-radius: 5px;">+</div>
+                    </div>
+                    <div class="d-flex flex-column justify-content-between h-100" data-toggle="modal"
+                        data-target="#item7">
+                        <div> <img src="image/image7.jpg" class="card-img-top " alt="...">
+                        </div>
+                        <div class="px-3">
+
+
+                            <p class="card-text productprice">$10</p>
+                            <p class="text-muted productcaption">Brewed Organic Green Tea</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- card 8 -->
+            <div class="col-lg-2 col-md-3 col-sm-6 col-10 card-deck" data-bs-toggle="tooltip" data-bs-placement="right"
+                title="Nescafe Grinded Coffee">
+                <div class="card mb-4 cardd">
+                    <div class="d-flex justify-content-between  m-3">
+                        <div></div>
+                        <div class="border border-muted px-2"
+                            style="font-family: 'Oswald', sans-serif; font-size: larger;border-radius: 5px;">+</div>
+                    </div>
+                    <div class="d-flex flex-column justify-content-between h-100" data-toggle="modal"
+                        data-target="#item8">
+                        <div> <img src="image/image8.jpg" class="card-img-top hover-shadow w-100" alt="...">
+                        </div>
+                        <div class="px-3">
+
+
+                            <p class="card-text productprice">$5.00 &nbsp;<s>$7.5</s></p>
+                            <p class="text-muted productcaption">Nescafe Grinded Coffee</p>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- card 9 -->
+            <div class="col-lg-2 col-md-3 col-sm-6 col-10 card-deck" data-bs-toggle="tooltip" data-bs-placement="right"
+                title="Grinded Frappe Coffee">
+                <div class="card mb-4 cardd ">
+                    <div class="d-flex justify-content-between  m-3">
+                        <div>
+                            <span class="badge badge-success">22%</span>
+                        </div>
+                        <div class="border border-muted px-2"
+                            style="font-family: 'Oswald', sans-serif; font-size: larger;border-radius: 5px;">+</div>
+                    </div>
+                    <div class="d-flex flex-column justify-content-between h-100" data-toggle="modal"
+                        data-target="#item9">
+                        <div>
+                            <img src="image/image9.jpg" class="card-img-top  my-auto" alt="...">
+                        </div>
+                        <div class="px-3">
+
+
+                            <p class="card-text productprice">$5.25 <s class="text-muted">$6.50</s></p>
+                            <p class="text-muted productcaption">Grinded Frappe Coffee</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- card 10 -->
+            <div class="col-lg-2 col-md-3 col-sm-6 col-10 card-deck" data-bs-toggle="tooltip" data-bs-placement="right"
+                title="Nescafe instant Coffee">
+                <div class="card mb-4 cardd ">
+                    <div class="d-flex justify-content-between  m-3">
+                        <div>
+                            <span class="badge badge-success">22%</span>
+                        </div>
+                        <div class="border border-muted px-2"
+                            style="font-family: 'Oswald', sans-serif; font-size: larger;border-radius: 5px;">+</div>
+                    </div>
+                    <div class="d-flex flex-column justify-content-between h-100" data-toggle="modal"
+                        data-target="#item10">
+                        <div>
+                            <img src="image/image10.jpg" class="card-img-top  my-auto" alt="...">
+                        </div>
+                        <div class="px-3">
+
+
+                            <p class="card-text productprice">$0.70 <s class="text-muted">$1.00</s></p>
+                            <p class="text-muted productcaption">Nescafe instant Coffee</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- card 11 -->
+            <div class="col-lg-2 col-md-3 col-sm-6 col-10 card-deck" data-bs-toggle="tooltip" data-bs-placement="right" title="English Tea">
+                <div class="card mb-4 cardd ">
+                    <div class="d-flex justify-content-between  m-3">
+                        <div>
+                            <span class="badge badge-success">22%</span>
+                        </div>
+                        <div class="border border-muted px-2"
+                            style="font-family: 'Oswald', sans-serif; font-size: larger;border-radius: 5px;">+</div>
+                    </div>
+                    <div class="d-flex flex-column justify-content-between h-100" data-toggle="modal"
+                        data-target="#item11">
+                        <div>
+                            <img src="image/image11.jpg" class="card-img-top" alt="...">
+                        </div>
+
+                        <div class="px-3">
+
+                            <p class="card-text productprice">$5.80</p>
+                            <p class="text-muted text-sm productcaption">English Tea</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- card 12-->
+            <div class="col-lg-2 col-md-3 col-sm-6 col-10 card-deck" data-bs-toggle="tooltip" data-bs-placement="right"
+                title="Black Coffee">
+                <div class="card mb-4 cardd ">
+                    <div class="d-flex justify-content-between  m-3">
+                        <div>
+                            <span class="badge badge-success">22%</span>
+                        </div>
+                        <div class="border border-muted px-2"
+                            style="font-family: 'Oswald', sans-serif; font-size: larger;border-radius: 5px;">+</div>
+                    </div>
+                    <div class="d-flex flex-column justify-content-between h-100" data-toggle="modal"
+                        data-target="#item12">
+                        <div>
+                            <img src="image/image12.jpg" class="card-img-top" alt="...">
+                        </div>
+
+                        <div class="px-3">
+
+                            <p class="card-text productprice">$3.00</p>
+                            <p class="text-muted productcaption">Black Coffee</p>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- card over -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- load more btn -->
+    <div class="d-flex justify-content-center mb-5">
+        <button class="btn btn-primary mx-auto bbt" id="btn" type="button" data-toggle="collapse"
+            data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"
+            style="font-family: 'Foobar Pro';">
+            Load More
+        </button>
+    </div>
+
+    <!-- load more item  -->
+
+    <div class="collapse" id="collapseExample">
+        <div class="d-flex justify-content-center  ">
+
+            <div class=" row col-lg-12 d-flex justify-content-center ">
+
+                <!-- card ex 1 -->
+                <div class=" col-lg-2 col-md-3 col-sm-6 col-10 card-deck" data-bs-toggle="tooltip" data-bs-placement="right"
+                    title="Raspberry Cookie">
+                    <div class="card mb-4 cardd ">
+                        <div class="d-flex justify-content-between m-3">
+                            <div>
+
+                            </div>
+                            <div class="border border-muted px-2"
+                                style="font-family: 'Oswald', sans-serif; font-size: larger;border-radius: 5px;">+</div>
+                        </div>
+                        <div class="d-flex flex-column justify-content-between h-100" data-toggle="modal"
+                            data-target="#itemex1">
+                            <div>
+                                <img src="image/imageex1.jpg" class="card-img-top" alt="...">
+                            </div>
+                            <div>
+                                <div class="card-body pt-1">
+
+                                    <p class="card-text productprice">$7.50</p>
+                                    <p class="text-muted productcaption">Raspberry Cookie</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- card ex 2 -->
+                <div class=" col-lg-2 col-md-3 col-sm-6 col-10 card-deck" data-bs-toggle="tooltip" data-bs-placement="right"
+                    title="Mixed Cookies">
+                    <div class="card mb-4 cardd">
+                        <div class="d-flex justify-content-between m-3">
+                            <div> <span class="badge badge-success"></span></div>
+                            <div class="border border-muted px-2"
+                                style="font-family: 'Oswald', sans-serif; font-size: larger;border-radius: 5px;">+</div>
+                        </div>
+                        <div class="d-flex flex-column justify-content-between h-100" data-toggle="modal"
+                            data-target="#itemex2">
+                            <div><img src="image/imageex2.jpg" class=" card-img-top " alt="...">
+                            </div>
+                            <div>
+                                <div class="card-body pt-1">
+
+                                    <p class="card-text productprice">$7.00 &nbsp;<s class="text-muted">$8,00</s></p>
+                                    <p class="text-muted productcaption">Mixed Cookies</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card ex 3 -->
+                <div class="col-lg-2 col-md-3 col-sm-6 col-10 card-deck" data-bs-toggle="tooltip" data-bs-placement="right"
+                    title="Baked Cookies">
+                    <div class="card mb-4 cardd ">
+                        <div class="d-flex justify-content-between m-3 ">
+                            <div><span class="badge badge-success">22%</span></div>
+                            <div class="border border-muted px-2"
+                                style="font-family: 'Oswald', sans-serif; font-size: larger;border-radius: 5px;">+</div>
+                        </div>
+                        <div class="d-flex flex-column justify-content-between h-100" data-toggle="modal"
+                            data-target="#itemex3">
+                            <div> <img src="image/imageex3.jpg" class="card-img-top " alt="...">
+                            </div>
+                            <div>
+                                <div class="card-body">
+                                    <p class="card-text productprice">$4.50</p>
+                                    <p class="text-muted productcaption">Baked Cookies</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card ex 4 -->
+                <div class="col-lg-2 col-md-3 col-sm-6 col-10 card-deck" data-bs-toggle="tooltip" data-bs-placement="right"
+                    title="Berry cookies">
+                    <div class="card mb-4 cardd ">
+                        <div class="d-flex justify-content-between  m-3 ">
+                            <div><span class="badge badge-success">22%</span></div>
+                            <div class="border border-muted px-2"
+                                style="font-family: 'Oswald', sans-serif; font-size: larger;border-radius: 5px;">+</div>
+                        </div>
+                        <div class="d-flex flex-column justify-content-between h-100" data-toggle="modal"
+                            data-target="#itemex4">
+                            <div> <img src="image/imageex4.jpg" class="card-img-top " alt="...">
+                            </div>
+                            <div>
+                                <div class="card-body">
+
+                                    <p class="card-text productprice">$8.00 &nbsp;<s class="text-muted">$9.50</s></p>
+
+                                    <p class="text-muted productcaption">Berry cookies</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card ex 5 -->
+                <div class="col-lg-2 col-md-3 col-sm-6 col-10 card-deck" data-bs-toggle="tooltip" data-bs-placement="right"
+                    title="Strawberry Cake">
+                    <div class="card mb-4 cardd">
+                        <div class="d-flex justify-content-between  m-3">
+                            <div></div>
+                            <div class="border border-muted px-2"
+                                style="font-family: 'Oswald', sans-serif; font-size: larger;border-radius: 5px;">+</div>
+                        </div>
+                        <div class="d-flex flex-column justify-content-between h-100" data-toggle="modal"
+                            data-target="#itemex5">
+                            <div> <img src="image/imageex5.jpg" class="card-img-top " alt="...">
+                            </div>
+                            <div>
+                                <div class="card-body">
+
+                                    <p class="card-text productprice">$12</p>
+                                    <p class="text-muted productcaption">Strawberry Cake</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card ex 6 -->
+                <div class="col-lg-2 col-md-3 col-sm-6 col-10 card-deck" data-bs-toggle="tooltip" data-bs-placement="right"
+                    title="juiceberry Cake">
+                    <div class="card mb-4 cardd">
+                        <div class="d-flex justify-content-between  m-3">
+                            <div></div>
+                            <div class="border border-muted px-2"
+                                style="font-family: 'Oswald', sans-serif; font-size: larger;border-radius: 5px;">+</div>
+                        </div>
+                        <div class="d-flex flex-column justify-content-between h-100" data-toggle="modal"
+                            data-target="#itemex6">
+                            <div> <img src="image/imageex6.jpg" class="card-img-top" alt="...">
+                            </div>
+                            <div>
+                                <div class="card-body ">
+
+                                    <p class="card-text productprice">$11.50</p>
+                                    <p class="text-muted productcaption">juiceberry Cake</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card ex 7 -->
+                <div class=" col-lg-2 col-md-3 col-sm-6 col-10 card-deck" data-bs-toggle="tooltip" data-bs-placement="right"
+                    title="Fudged Cake">
+                    <div class="card mb-4 cardd ">
+                        <div class="d-flex justify-content-between m-3">
+                            <div>
+
+                            </div>
+                            <div class="border border-muted px-2"
+                                style="font-family: 'Oswald', sans-serif; font-size: larger;border-radius: 5px;">+</div>
+                        </div>
+                        <div class="d-flex flex-column justify-content-between h-100" data-toggle="modal"
+                            data-target="#itemex7">
+                            <div>
+                                <img src="image/imageex7.jpg" class="card-img-top" alt="...">
+                            </div>
+                            <div>
+                                <div class="card-body pt-1">
+
+                                    <p class="card-text productprice">$11.75</p>
+                                    <p class="text-muted productcaption">Ice Fudged Cake</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- card ex 8 -->
+                <div class=" col-lg-2 col-md-3 col-sm-6 col-10 card-deck" data-bs-toggle="tooltip" data-bs-placement="right"
+                    title="Rasberry Cake">
+                    <div class="card mb-4 cardd">
+                        <div class="d-flex justify-content-between m-3">
+                            <div> <span class="badge badge-success"></span></div>
+                            <div class="border border-muted px-2"
+                                style="font-family: 'Oswald', sans-serif; font-size: larger;border-radius: 5px;">+</div>
+                        </div>
+                        <div class="d-flex flex-column justify-content-between h-100" data-toggle="modal"
+                            data-target="#itemex8">
+                            <div><img src="image/imageex8.jpg" class=" card-img-top " alt="...">
+                            </div>
+                            <div>
+                                <div class="card-body pt-1">
+                                    <p class="card-text productprice">$12.00 &nbsp;<s class="text-muted">$15.00</s></p>
+
+                                    <p class="text-muted productcaption">Rasberry Cake</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card ex 9 -->
+                <div class="col-lg-2 col-md-3 col-sm-6 col-10 card-deck" data-bs-toggle="tooltip" data-bs-placement="right"
+                    title="Black Forest">
+                    <div class="card mb-4 cardd ">
+                        <div class="d-flex justify-content-between m-3 ">
+                            <div><span class="badge badge-success">22%</span></div>
+                            <div class="border border-muted px-2"
+                                style="font-family: 'Oswald', sans-serif; font-size: larger;border-radius: 5px;">+</div>
+                        </div>
+                        <div class="d-flex flex-column justify-content-between h-100" data-toggle="modal"
+                            data-target="#itemex9">
+                            <div> <img src="image/imageex9.jpg" class="card-img-top " alt="...">
+                            </div>
+                            <div>
+                                <div class="card-body">
+
+                                    <p class="card-text productprice">$4.00</p>
+                                    <p class="text-muted productcaption">Black Forest</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card ex 10 -->
+                <div class="col-lg-2 col-md-3 col-sm-6 col-10 card-deck" data-bs-toggle="tooltip" data-bs-placement="right"
+                    title="Choco Cupcake">
+                    <div class="card mb-4 cardd ">
+                        <div class="d-flex justify-content-between  m-3 ">
+                            <div><span class="badge badge-success">22%</span></div>
+                            <div class="border border-muted px-2"
+                                style="font-family: 'Oswald', sans-serif; font-size: larger;border-radius: 5px;">+</div>
+                        </div>
+                        <div class="d-flex flex-column justify-content-between h-100" data-toggle="modal"
+                            data-target="#itemex10">
+                            <div> <img src="image/imageex10.jpg" class="card-img-top " alt="...">
+                            </div>
+                            <div>
+                                <div class="card-body">
+
+                                    <p class="card-text productprice">$7.00</p>
+                                    <p class="text-muted productcaption">Choco Cupcake</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card ex 11 -->
+                <div class="col-lg-2 col-md-3 col-sm-6 col-10 card-deck" data-bs-toggle="tooltip" data-bs-placement="right"
+                    title="Wheat Bread">
+                    <div class="card mb-4 cardd">
+                        <div class="d-flex justify-content-between  m-3">
+                            <div></div>
+                            <div class="border border-muted px-2"
+                                style="font-family: 'Oswald', sans-serif; font-size: larger;border-radius: 5px;">+</div>
+                        </div>
+                        <div class="d-flex flex-column justify-content-between h-100" data-toggle="modal"
+                            data-target="#itemex11">
+                            <div> <img src="image/imageex11.jpg" class="card-img-top " alt="...">
+                            </div>
+                            <div>
+                                <div class="card-body">
+
+                                    <p class="card-text productprice">$18</p>
+                                    <p class="text-muted productcaption">Wheat Bread</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card ex 12 -->
+                <div class="col-lg-2 col-md-3 col-sm-6 col-10 card-deck" data-bs-toggle="tooltip" data-bs-placement="right"
+                    title="Rice Bread">
+                    <div class="card mb-4 cardd">
+                        <div class="d-flex justify-content-between  m-3">
+                            <div></div>
+                            <div class="border border-muted px-2"
+                                style="font-family: 'Oswald', sans-serif; font-size: larger;border-radius: 5px;">+</div>
+                        </div>
+                        <div class="d-flex flex-column justify-content-between h-100" data-toggle="modal"
+                            data-target="#itemex12">
+                            <div> <img src="image/imageex12.jpg" class="card-img-top" alt="...">
+                            </div>
+                            <div>
+                                <div class="card-body ">
+
+                                    <p class="card-text productprice productprice">$22</p>
+                                    <p class="text-muted productcaption">Rice Bread</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+        <!-- cards close -->
+
+        <hr>
+
+
+
+
+
+
+
+        <!-- after cards -->
+        <!-- <div>
+            <div>
+                <h3 class="text-center" style="font-family: 'Foobar Pro';">CUSTOMER TESTIMONIALS</h3>
+            </div>
+
+
+        </div> -->
+
+    </div>
+
+
+
+
+
+    <!--Social lower nav -->
+    <!-- <div class="float-right mx-3">
+            <h3> KEEP IN TOUCH</h3>
+            <a href="https://www.facebook.com/" target="blank"><i class="fa fa-facebook fa-2x rounded-fa-icon"></i>
+            </a>
+            <a href="https://www.youtube.com/" target="blank"><i class="fa fa-youtube fa-2x rounded-fa-icon"></i></a>
+            <a href="https://www.instagram.com/" target="blank"><i
+                    class="fa fa-instagram fa-2x rounded-fa-icon"></i></a>
+                    <a href="https://in.pinterest.com/" target="blank"><i class="fa fa-pinterest fa-2x rounded-fa-icon"></i></a>
+                    <a href="https://www.linkedin.com/" target="blank"><i class="fa fa-linkedin fa-2x rounded-fa-icon"></i></a>
+                    
+                    <h3 style="font-weight:normal">Download <strong>PICK BAZAR</strong> App</h3>
+                    <div class="app-sec">
+                <a href="https://play.google.com/store/apps/" target="blank">
+                    <img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png"
+                        class="img-responsive ls-is-cached lazyloaded" alt="" style="height: 50px;">
+                </a>
+            </div>
+        </div> -->
+
+
+
+    <!-- card pop -->
+    <div class="popcard">
+
+
+
+        <!-- card 1 pop item -->
+        <div class="modal fade" id="item1" tabindex="-1" role="dialog" aria-labelledby="item1" aria-hidden="true">
+            <div class="modal-dialog mx-auto" role="document">
+                <div class="modal-content">
+
+                    <!-- modal-body -->
+                    <!-- <div class="mx-2">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true" class="px-2 pb-1 closebtn">&times;</span>
+                        </button>
+                    </div>
+                    <div>
+                        <span class="badge badge-success mx-3">22%</span></div> -->
+                    <div class="d-flex flex-column p-4 ">
+                        <!-- align-content-center justify-content-center flex-wrap -->
+                        <div class="mx-auto">
+                            <div class="imgouter d-flex mx-auto justify-content-center"> <img src="image/image1.jpg"
+                                    class="imgitem1 mx-auto" alt="">
+                            </div>
+
+                            <p class="text-muted text-center">Orange juice</p>
+                        </div>
+
+                        <div class="d-flex flex-row justify-content-center">
+                            <div class="contents">
+                                <p class="align-item-center px-3">Juice is a drink made from the extraction or pressing
+                                    of the natural liquid contained in fruit and vegetables</p>
+                                <div class="d-flex justify-content-around">
+                                    <div>
+                                        <p class="strong">Category</p>
+                                        <p class="strong">Seller</p>
+                                        <p class="strong">Quantity</p>
+                                        <p class="strong">Price</p>
+                                    </div>
+                                    <div>
+                                        <p class="card p- text-center text-muted">Juice</p>
+                                        <p>Bakery-Shop</p>
+                                        <p>100ml</p>
+                                        <p><b> $1.80</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <div class="modal-footer d-block justify-content-around">
+
+                        <a href="#" class="btn addtocart btn-block">
+                            <i class="fa fa-shopping-cart pr-1"></i>Add to cart</a>
+                        <p class="text-muted text-center">50 items available</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- card 2 pop item -->
+        <div class="modal fade" id="item2" tabindex="-1" role="dialog" aria-labelledby="item2" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                    <!-- modal-body -->
+                    <div class="mx-2">
+                        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true" class="px-2 pb-1 closebtn">&times;</span>
+                        </button>
+                    </div>
+                    <div>
+                        <span class="badge badge-success mx-3">22%</span></div> -->
+                        <div class="d-flex flex-row align-content-center justify-content-center flex-wrap">
+
+                            <div class="mx-auto">
+                                <div class="imgouter d-flex mx-auto justify-content-center"> <img src="image/image2.jpg"
+                                        class="imgitem1 mx-auto" alt="">
+                                </div>
+
+                                <p class="text-muted text-center"> Pomegranate Juice</p>
+                            </div>
+
+                            <div class="d-flex flex-row justify-content-center">
+                                <div class="contents">
+                                    <p class="align-item-center px-3">Juice is a drink made from the extraction or
+                                        pressing of the natural liquid contained in fruit and vegetables.</p>
+                                    <div class="d-flex justify-content-around">
+                                        <div>
+                                            <p class="strong">Category</p>
+                                            <p class="strong">Seller</p>
+                                            <p class="strong">Quantity</p>
+                                            <p class="strong">Price</p>
+                                        </div>
+                                        <div>
+                                            <p class="card p- text-center text-muted">Juice</p>
+                                            <p>Bakery-Shop</p>
+                                            <p>100ml</p>
+                                            <p><b>$80 &nbsp;<s>$85</s></b></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                        <div class="modal-footer d-block justify-content-around">
+
+                            <a href="#" class="btn addtocart btn-block">
+                                <i class="fa fa-shopping-cart pr-1"></i>Add to cart</a>
+                            <p class="text-muted text-center">50 items available</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- card 3 pop item -->
+        <div class="modal fade " id="item3" tabindex="-1" role="dialog" aria-labelledby="item3" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                    <!-- modal-body -->
+                    <!-- <div class="mx-2">
+                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true" class="px-2 pb-1 closebtn">&times;</span>
+                        </button>
+                    </div>
+                    <div>
+                        <span class="badge badge-success mx-3">22%</span></div> -->
+                    <div class=" d-flex flex-row align-content-center justify-content-center flex-wrap">
+
+                        <div class="mx-auto">
+                            <div class="imgouter d-flex mx-auto justify-content-center"> <img src="image/image3.jpg"
+                                    class="imgitem1 mx-auto" alt="">
+                            </div>
+
+                            <p class="text-muted text-center"> Kirkland Lemonade</p>
+                        </div>
+
+                        <div class="d-flex flex-row justify-content-center">
+                            <div class="contents">
+                                <p class="align-item-center px-3">Juice is a drink made from the extraction or pressing
+                                    of the natural liquid contained in fruit and vegetables.</p>
+                                <div class="d-flex justify-content-around">
+                                    <div>
+                                        <p class="strong">Category</p>
+                                        <p class="strong">Seller</p>
+                                        <p class="strong">Quantity</p>
+                                        <p class="strong">Price</p>
+                                    </div>
+                                    <div>
+                                        <p class="card p- text-center text-muted">Juice</p>
+                                        <p>Bakery-Shop</p>
+                                        <p>100ml</p>
+                                        <p><b> $120</b></p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+                        <div class="modal-footer d-block justify-content-around">
+
+                            <a href="#" class="btn addtocart btn-block">
+                                <i class="fa fa-shopping-cart pr-1"></i>Add to cart</a>
+                            <p class="text-muted text-center">50 items available</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- card 4 pop item -->
+        <div class="modal fade " id="item4" tabindex="-1" role="dialog" aria-labelledby="Sun Tropics Mango"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                    <!-- modal-body -->
+                    <!-- <div class="mx-2">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true" class="px-2 pb-1 closebtn">&times;</span>
+                        </button>
+                    </div>
+                    <div>
+                        <span class="badge badge-success mx-3">22%</span></div> -->
+                    <div class=" d-flex flex-row align-content-center justify-content-center flex-wrap">
+
+                        <div class="mx-auto">
+                            <div class="imgouter d-flex mx-auto justify-content-center"> <img src="image/image4.jpg"
+                                    class="imgitem1 mx-auto" alt="">
+                            </div>
+
+                            <p class="text-muted text-center">Sun Tropics Mango</p>
+                        </div>
+
+                        <div class="d-flex flex-row justify-content-center">
+                            <div class="contents">
+                                <p class="align-item-center px-3">Juice is a drink made from the extraction or pressing
+                                    of the natural liquid contained in fruit and vegetables.</p>
+                                <div class="d-flex justify-content-around">
+                                    <div>
+                                        <p class="strong">Category</p>
+                                        <p class="strong">Seller</p>
+                                        <p class="strong">Quantity</p>
+                                        <p class="strong">Price</p>
+                                    </div>
+                                    <div>
+                                        <p class="card p- text-center text-muted">Juice</p>
+                                        <p>Bakery-Shop</p>
+                                        <p>100ml</p>
+                                        <p>$20 &nbsp;<s class="text-muted">$25</s></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer d-block justify-content-around">
+
+                        <a href="#" class="btn addtocart btn-block">
+                            <i class="fa fa-shopping-cart pr-1"></i>Add to cart</a>
+                        <p class="text-muted text-center">50 items available</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- card 5 pop item -->
+        <div class="modal fade " id="item5" tabindex="-1" role="dialog" aria-labelledby="Kirkland Cranberry Cocktail"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                    <!-- modal-body -->
+                    <div class="mx-2">
+                        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true" class="px-2 pb-1 closebtn">&times;</span>
+                        </button>
+                    </div>
+                    <div>
+                        <span class="badge badge-success mx-3">22%</span></div> -->
+                        <div class=" d-flex flex-row align-content-center justify-content-center flex-wrap">
+
+                            <div class="mx-auto">
+                                <div class="imgouter d-flex mx-auto justify-content-center"> <img src="image/image5.jpg"
+                                        class="imgitem1 mx-auto" alt="">
+                                </div>
+
+                                <p class="text-muted text-center">Kirkland Cranberry Cocktail</p>
+                            </div>
+
+                            <div class="d-flex flex-row justify-content-center">
+                                <div class="contents">
+                                    <p class="align-item-center px-3">Juice is a drink made from the extraction or
+                                        pressing of the natural liquid contained in fruit and vegetables.</p>
+                                    <div class="d-flex justify-content-around">
+                                        <div>
+                                            <p class="strong">Category</p>
+                                            <p class="strong">Seller</p>
+                                            <p class="strong">Quantity</p>
+                                            <p class="strong">Price</p>
+                                        </div>
+                                        <div>
+                                            <p class="card p- text-center text-muted">Juice</p>
+                                            <p>Bakery-Shop</p>
+                                            <p>100ml</p>
+                                            <p><b> $100</b></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                        <div class="modal-footer d-block justify-content-around">
+
+                            <a href="#" class="btn addtocart btn-block">
+                                <i class="fa fa-shopping-cart pr-1"></i>Add to cart</a>
+                            <p class="text-muted text-center">50 items available</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- card 6 pop item -->
+
+        <div class="modal fade " id="item6" tabindex="-1" role="dialog" aria-labelledby="item6" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                    <!-- modal-body -->
+                    <div class="mx-2">
+                        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true" class="px-2 pb-1 closebtn">&times;</span>
+                        </button>
+                    </div>
+                    <div>
+                        <span class="badge badge-success mx-3">22%</span></div> -->
+                        <div class=" d-flex flex-row align-content-center justify-content-center flex-wrap">
+
+                            <div class="mx-auto">
+                                <div class="imgouter d-flex mx-auto justify-content-center"> <img src="image/image6.jpg"
+                                        class="imgitem1 mx-auto" alt="">
+                                </div>
+
+                                <p class="text-muted text-center">Kirkland Cranberry Cocktail</p>
+                            </div>
+
+                            <div class="d-flex flex-row justify-content-center">
+                                <div class="contents">
+                                    <p class="align-item-center px-3">Juice is a drink made from the extraction or
+                                        pressing of the natural liquid contained in fruit and vegetables.</p>
+                                    <div class="d-flex justify-content-around">
+                                        <div>
+                                            <p class="strong">Category</p>
+                                            <p class="strong">Seller</p>
+                                            <p class="strong">Quantity</p>
+                                            <p class="strong">Price</p>
+                                        </div>
+                                        <div>
+                                            <p class="card p- text-center text-muted">Juice</p>
+                                            <p>Bakery-Shop</p>
+                                            <p>100ml</p>
+                                            <p><b> $9.80</b></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                        <div class="modal-footer d-block justify-content-around">
+
+                            <a href="#" class="btn addtocart btn-block">
+                                <i class="fa fa-shopping-cart pr-1"></i>Add to cart</a>
+                            <p class="text-muted text-center">50 items available</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- card 7 pop item -->
+        <div class="modal fade " id="item7" tabindex="-1" role="dialog" aria-labelledby="item7" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                    <!-- modal-body -->
+                    <div class="mx-2">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true" class="px-2 pb-1 closebtn">&times;</span>
+                        </button>
+                    </div>
+                    <div>
+                        <span class="badge badge-success mx-3">22%</span></div>
+                    <div class=" d-flex flex-row align-content-center justify-content-center flex-wrap">
+
+                        <div class="mx-auto">
+                            <div class="imgouter d-flex mx-auto justify-content-center"> <img src="image/image7.jpg"
+                                    class="imgitem1 mx-auto" alt="">
+                            </div>
+
+                            <p class="text-muted text-center">Brewed Organic Green Tea</p>
+                        </div>
+
+                        <div class="d-flex flex-row justify-content-center">
+                            <div class="contents">
+                                <p class="align-item-center px-3">Juice is a drink made from the extraction or pressing
+                                    of the natural liquid contained in fruit and vegetables.</p>
+                                <div class="d-flex justify-content-around">
+                                    <div>
+                                        <p class="strong">Category</p>
+                                        <p class="strong">Seller</p>
+                                        <p class="strong">Quantity</p>
+                                        <p class="strong">Price</p>
+                                    </div>
+                                    <div>
+                                        <p class="card p- text-center text-muted">Coffee & Tea</p>
+                                        <p>Bakery-Shop</p>
+                                        <p>100ml</p>
+                                        <p>$10</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <div class="modal-footer d-block justify-content-around">
+
+                        <a href="#" class="btn addtocart btn-block">
+                            <i class="fa fa-shopping-cart pr-1"></i>Add to cart</a>
+                        <p class="text-muted text-center">50 items available</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- card 8 pop item -->
+        <div class="modal fade " id="item8" tabindex="-1" role="dialog" aria-labelledby="item8" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                    <!-- modal-body -->
+                    <div class="mx-2">
+                        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true" class="px-2 pb-1 closebtn">&times;</span>
+                        </button>
+                    </div>
+                    <div>
+                        <span class="badge badge-success mx-3">22%</span></div> -->
+                        <div class=" d-flex flex-row align-content-center justify-content-center flex-wrap">
+
+                            <div class="mx-auto">
+                                <div class="imgouter d-flex mx-auto justify-content-center"> <img src="image/image8.jpg"
+                                        class="imgitem1 mx-auto" alt="">
+                                </div>
+
+                                <p class="text-muted text-center">Grinded Frappe Coffee</p>
+                            </div>
+
+                            <div class="d-flex flex-row justify-content-center">
+                                <div class="contents">
+                                    <p class="align-item-center px-3">Juice is a drink made from the extraction or
+                                        pressing of the natural liquid contained in fruit and vegetables.</p>
+                                    <div class="d-flex justify-content-around">
+                                        <div>
+                                            <p class="strong">Category</p>
+                                            <p class="strong">Seller</p>
+                                            <p class="strong">Quantity</p>
+                                            <p class="strong">Price</p>
+                                        </div>
+                                        <div>
+                                            <p class="card p- text-center text-muted">Coffee & Tea</p>
+                                            <p>Bakery-Shop</p>
+                                            <p>100ml</p>
+                                            <p>$5.25 <s class="text-muted">$6.50</s></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                        <div class="modal-footer d-block justify-content-around">
+
+                            <a href="#" class="btn addtocart btn-block">
+                                <i class="fa fa-shopping-cart pr-1"></i>Add to cart</a>
+                            <p class="text-muted text-center">50 items available</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- card 9 pop item -->
+        <div class="modal fade " id="item9" tabindex="-1" role="dialog" aria-labelledby="item9" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                    <!-- modal-body -->
+                    <div class="mx-2">
+                        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true" class="px-2 pb-1 closebtn">&times;</span>
+                        </button>
+                    </div>
+                    <div>
+                        <span class="badge badge-success mx-3">22%</span></div> -->
+                        <div class=" d-flex flex-row align-content-center justify-content-center flex-wrap">
+
+                            <div class="mx-auto">
+                                <div class="imgouter d-flex mx-auto justify-content-center"> <img src="image/image9.jpg"
+                                        class="imgitem1 mx-auto" alt="">
+                                </div>
+
+                                <p class="text-muted text-center">Grinded Frappe Coffee</p>
+                            </div>
+
+                            <div class="d-flex flex-row justify-content-center">
+                                <div class="contents">
+                                    <p class="align-item-center px-3">Juice is a drink made from the extraction or
+                                        pressing of the natural liquid contained in fruit and vegetables.</p>
+                                    <div class="d-flex justify-content-around">
+                                        <div>
+                                            <p class="strong">Category</p>
+                                            <p class="strong">Seller</p>
+                                            <p class="strong">Quantity</p>
+                                            <p class="strong">Price</p>
+                                        </div>
+                                        <div>
+                                            <p class="card p- text-center text-muted">Coffee & Tea</p>
+                                            <p>Bakery-Shop</p>
+                                            <p>100ml</p>
+                                            <p>$5.25 <s class="text-muted">$6.50</s></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                        <div class="modal-footer d-block justify-content-around">
+
+                            <a href="#" class="btn addtocart btn-block">
+                                <i class="fa fa-shopping-cart pr-1"></i>Add to cart</a>
+                            <p class="text-muted text-center">50 items available</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- card 10 pop item -->
+        <div class="modal fade " id="item10" tabindex="-1" role="dialog" aria-labelledby="item10" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                    <!-- modal-body -->
+                    <div class="mx-2">
+                        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true" class="px-2 pb-1 closebtn">&times;</span>
+                        </button>
+                    </div>
+                    <div>
+                        <span class="badge badge-success mx-3">22%</span></div> -->
+                        <div class=" d-flex flex-row align-content-center justify-content-center flex-wrap">
+
+                            <div class="mx-auto">
+                                <div class="imgouter d-flex mx-auto justify-content-center"> <img
+                                        src="image/image10.jpg" class="imgitem1 mx-auto" alt="">
+                                </div>
+
+                                <p class="text-muted text-center">Nescafe instant Coffee</p>
+                            </div>
+
+                            <div class="d-flex flex-row justify-content-center">
+                                <div class="contents">
+                                    <p class="align-item-center px-3">Juice is a drink made from the extraction or
+                                        pressing of the natural liquid contained in fruit and vegetables.</p>
+                                    <div class="d-flex justify-content-around">
+                                        <div>
+                                            <p class="strong">Category</p>
+                                            <p class="strong">Seller</p>
+                                            <p class="strong">Quantity</p>
+                                            <p class="strong">Price</p>
+                                        </div>
+                                        <div>
+                                            <p class="card p- text-center text-muted">Coffee & Tea</p>
+                                            <p>Bakery-Shop</p>
+                                            <p>100ml</p>
+                                            <p><b> $1.80</b></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                        <div class="modal-footer d-block justify-content-around">
+
+                            <a href="#" class="btn addtocart btn-block">
+                                <i class="fa fa-shopping-cart pr-1"></i>Add to cart</a>
+                            <p class="text-muted text-center">50 items available</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- card 11 pop item -->
+        <div class="modal fade " id="item11" tabindex="-1" role="dialog" aria-labelledby="item11" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                    <!-- modal-body -->
+                    <div class="mx-2">
+                        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true" class="px-2 pb-1 closebtn">&times;</span>
+                        </button>
+                    </div>
+                    <div>
+                        <span class="badge badge-success mx-3">22%</span></div> -->
+                        <div class=" d-flex flex-row align-content-center justify-content-center flex-wrap">
+
+                            <div class="mx-auto">
+                                <div class="imgouter d-flex mx-auto justify-content-center"> <img
+                                        src="image/image11.jpg" class="imgitem1 mx-auto" alt="">
+                                </div>
+
+                                <p class="text-muted text-center">English Tea</p>
+                            </div>
+
+                            <div class="d-flex flex-row justify-content-center">
+                                <div class="contents">
+                                    <p class="align-item-center px-3">Juice is a drink made from the extraction or
+                                        pressing of the natural liquid contained in fruit and vegetables.</p>
+                                    <div class="d-flex justify-content-around">
+                                        <div>
+                                            <p class="strong">Category</p>
+                                            <p class="strong">Seller</p>
+                                            <p class="strong">Quantity</p>
+                                            <p class="strong">Price</p>
+                                        </div>
+                                        <div>
+                                            <p class="card p- text-center text-muted">Coffee & Tea</p>
+                                            <p>Bakery-Shop</p>
+                                            <p>100ml</p>
+                                            <p><b> $5.80</b></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                        <div class="modal-footer d-block justify-content-around">
+
+                            <a href="#" class="btn addtocart btn-block">
+                                <i class="fa fa-shopping-cart pr-1"></i>Add to cart</a>
+                            <p class="text-muted text-center">50 items available</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- card 12 pop item -->
+        <div class="modal fade " id="item12" tabindex="-1" role="dialog" aria-labelledby="item12" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                    <!-- modal-body -->
+                    <div class="mx-2">
+                        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true" class="px-2 pb-1 closebtn">&times;</span>
+                        </button>
+                    </div>
+                    <div>
+                        <span class="badge badge-success mx-3">22%</span></div> -->
+                        <div class=" d-flex flex-row align-content-center justify-content-center flex-wrap">
+
+                            <div class="mx-auto">
+                                <div class="imgouter d-flex mx-auto justify-content-center">
+                                    <img src="image/image12.jpg" class="imgitem1 mx-auto" alt="">
+                                </div>
+
+                                <p class="text-muted text-center">>Black Coffee</p>
+                            </div>
+
+                            <div class="d-flex flex-row justify-content-center">
+                                <div class="contents">
+                                    <p class="align-item-center px-3">Juice is a drink made from the extraction or
+                                        pressing of the natural liquid contained in fruit and vegetables.</p>
+                                    <div class="d-flex justify-content-around">
+                                        <div>
+                                            <p class="strong">Category</p>
+                                            <p class="strong">Seller</p>
+                                            <p class="strong">Quantity</p>
+                                            <p class="strong">Price</p>
+                                        </div>
+                                        <div>
+                                            <p class="card p- text-center text-muted">Coffee & Tea</p>
+                                            <p>Bakery-Shop</p>
+                                            <p>100ml</p>
+                                            <p><b> $3.00</b></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                        <div class="modal-footer d-block justify-content-around">
+
+                            <a href="#" class="btn addtocart btn-block">
+                                <i class="fa fa-shopping-cart pr-1"></i>Add to cart</a>
+                            <p class="text-muted text-center">50 items available</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- card pop end-->
+
+
+    </div>
+
+
+    <!-- card pop for ex -->
+    <div class="popex">
+
+        <!-- card 1 ex-item -->
+        <div class="modal fade" id="itemex1" tabindex="-1" role="dialog" aria-labelledby="itemex1" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                    <div class="mx-2">
+                        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button> -->
+
+
+                        <div class="d-flex flex-row align-content-center justify-content-center flex-wrap">
+                            <div>
+                                <div class="imgouter d-flex mx-auto justify-content-center">
+                                    <img src="image/imageex1.jpg" class="imgitem1 mx-auto" alt=""></div>
+                                <p class="text-muted text-center">Raspberry Cookie</p>
+                            </div>
+
+
+                            <div class="d-flex flex-row ">
+                                <div class="contents">
+                                    <p class="align-item-center">Juice is a drink made from the extraction or pressing
+                                        of the natural liquid contained in fruit and vegetables.</p>
+                                    <div class="d-flex justify-content-around">
+                                        <div>
+                                            <p class="strong">Category</p>
+                                            <p class="strong">Seller</p>
+                                            <p class="strong">Quantity</p>
+                                            <p class="strong">Price</p>
+                                        </div>
+                                        <div>
+                                            <p class="card p- text-center text-muted">Cookies</p>
+                                            <p>Bakery-Shop</p>
+                                            <p>250 g</p>
+                                            <p><b> $7.50</b></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="modal-footer d-block justify-content-around">
+
+                        <a href="#" class="btn addtocart btn-block">
+                            <i class="fa fa-shopping-cart pr-1"></i>Add to cart</a>
+                        <p class="text-muted text-center">50 items available</p>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- card 2 ex-item -->
+        <div class="modal fade" id="itemex2" tabindex="-1" role="dialog" aria-labelledby="itemex2" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                    <div class="mx-2">
+                        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button> -->
+
+
+                        <div class="d-flex flex-row align-content-center justify-content-center flex-wrap">
+                            <div>
+                                <div class="imgouter d-flex mx-auto justify-content-center">
+                                    <img src="image/imageex2.jpg" class="imgitem1 mx-auto" alt=""></div>
+
+                                <p class="text-muted text-center">Mixed Cookies</p>
+                            </div>
+
+
+                            <div class="d-flex flex-row ">
+                                <div class="contents">
+                                    <p class="align-item-center">Juice is a drink made from the extraction or pressing
+                                        of the natural liquid contained in fruit and vegetables.</p>
+                                    <div class="d-flex justify-content-around">
+                                        <div>
+                                            <p class="strong">Category</p>
+                                            <p class="strong">Seller</p>
+                                            <p class="strong">Quantity</p>
+                                            <p class="strong">Price</p>
+                                        </div>
+                                        <div>
+                                            <p class="card p- text-center text-muted">Cookies</p>
+                                            <p>Bakery-Shop</p>
+                                            <p>250 g</p>
+                                            <p>$7.00 &nbsp;<s class="text-muted">$8,00</s></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="modal-footer d-block justify-content-around">
+
+                        <a href="#" class="btn addtocart btn-block">
+                            <i class="fa fa-shopping-cart pr-1"></i>Add to cart</a>
+                        <p class="text-muted text-center">50 items available</p>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- card 3 ex-item -->
+        <div class="modal fade" id="itemex3" tabindex="-1" role="dialog" aria-labelledby="itemex3" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-body">
+                        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button> -->
+
+
+                        <div class="d-flex flex-row align-content-center justify-content-center flex-wrap">
+                            <div>
+                                <div class="imgouter d-flex mx-auto justify-content-center"> <img
+                                        src="image/imageex3.jpg" class="imgitem1 mx-auto" alt=""></div>
+                                <p class="text-muted text-center">Baked Cookies</p>
+                            </div>
+
+
+                            <div class="d-flex flex-row ">
+                                <div class="contents">
+                                    <p class="align-item-center">Juice is a drink made from the extraction or pressing
+                                        of the natural liquid contained in fruit and vegetables.</p>
+                                    <div class="d-flex justify-content-around">
+                                        <div>
+                                            <p class="strong">Category</p>
+                                            <p class="strong">Seller</p>
+                                            <p class="strong">Quantity</p>
+                                            <p class="strong">Price</p>
+                                        </div>
+                                        <div>
+                                            <p class="card p- text-center text-muted">Cookies</p>
+                                            <p>Bakery-Shop</p>
+                                            <p>100ml</p>
+                                            <p>$8.00 &nbsp;<s class="text-muted">$9.50</s></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="modal-footer d-block justify-content-around">
+
+                        <a href="#" class="btn addtocart btn-block">
+                            <i class="fa fa-shopping-cart pr-1"></i>Add to cart</a>
+                        <p class="text-muted text-center">50 items available</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- card 4 ex-item -->
+        <div class="modal fade" id="itemex4" tabindex="-1" role="dialog" aria-labelledby="itemex4" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-body">
+                        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button> -->
+
+
+                        <div class="d-flex flex-row align-content-center justify-content-center flex-wrap">
+                            <div class="mx-auto">
+                                <div class="imgouter d-flex mx-auto justify-content-center"> <img
+                                        src="image/imageex4.jpg" class="imgitem1 mx-auto" alt=""></div>
+                                <p class="text-muted text-center">Berry cookies</p>
+                            </div>
+
+
+                            <div class="d-flex flex-row ">
+                                <div class="contents"><br><br>
+                                    <p class="align-item-center">Juice is a drink made from the extraction or pressing
+                                        of the natural liquid contained in fruit and vegetables.</p>
+                                    <div class="d-flex justify-content-around">
+                                        <div>
+                                            <p class="strong">Category</p>
+                                            <p class="strong">Seller</p>
+                                            <p class="strong">Quantity</p>
+                                            <p class="strong">Price</p>
+                                        </div>
+                                        <div>
+                                            <p class="card p- text-center text-muted">Cookies</p>
+                                            <p>Bakery-Shop</p>
+                                            <p>100ml</p>
+                                            <p>$8.00 &nbsp;<s class="text-muted">$9.50</s></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="modal-footer d-block justify-content-around">
+
+                        <a href="#" class="btn addtocart btn-block">
+                            <i class="fa fa-shopping-cart pr-1"></i>Add to cart</a>
+                        <p class="text-muted text-center">50 items available</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- card 5 ex-item -->
+        <div class="modal fade" id="itemex5" tabindex="-1" role="dialog" aria-labelledby="itemex5" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                    <div class="mx-2">
+                        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button> -->
+
+
+                        <div class="d-flex flex-row align-content-center justify-content-center flex-wrap">
+
+                            <div class="mx-auto">
+                                <div class="imgouter d-flex mx-auto justify-content-center"> <img
+                                        src="image/imageex5.jpg" class="imgitem1 mx-auto" alt="">
+                                </div>
+
+                                <p class="text-muted text-center"> Strawberry Cake</p>
+                            </div>
+
+                            <div class="d-flex flex-row  justify-content-center">
+                                <div class="contents">
+                                    <p class="align-item-center mx-3">Juice is a drink made from the extraction or
+                                        pressing of the natural liquid contained in fruit and vegetables.</p>
+                                    <div class="d-flex justify-content-around">
+                                        <div>
+                                            <p class="strong">Category</p>
+                                            <p class="strong">Seller</p>
+                                            <p class="strong">Quantity</p>
+                                            <p class="strong">Price</p>
+                                        </div>
+                                        <div>
+                                            <p class="card p- text-center text-muted">Cake</p>
+                                            <p>Bakery-Shop</p>
+                                            <p>1 kg</p>
+                                            <p><b> $12</b></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="modal-footer d-block justify-content-around">
+
+                        <a href="#" class="btn addtocart btn-block">
+                            <i class="fa fa-shopping-cart pr-1"></i>Add to cart</a>
+                        <p class="text-muted text-center">50 items available</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- card 6 ex-item -->
+        <div class="modal fade" id="itemex6" tabindex="-1"  role="dialog" aria-labelledby="itemex6" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                    <div class="mx-2">
+                        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button> -->
+
+
+                        <div class="d-flex flex-row align-content-center justify-content-center flex-wrap">
+                            <div class="mx-auto">
+
+                                <div class="imgouter d-flex mx-auto justify-content-center"> <img
+                                    src="image/imageex6.jpg" class="imgitem1 mx-auto" alt="">
+                                </div>
+                                    <p class="text-muted text-center">juiceberry Cake</p>
+                            </div>
+
+
+                            <div class="d-flex flex-row justify-content-center">
+                                <div class="contents">
+                                    <p class="align-item-center mx-3">Juice is a drink made from the extraction or pressing
+                                        of the natural liquid contained in fruit and vegetables.</p>
+                                    <div class="d-flex justify-content-around">
+                                        <div>
+                                            <p class="strong">Category</p>
+                                            <p class="strong">Seller</p>
+                                            <p class="strong">Quantity</p>
+                                            <p class="strong">Price</p>
+                                        </div>
+                                        <div>
+                                            <p class="card p- text-center text-muted">Cake</p>
+                                            <p>Bakery-Shop</p>
+                                            <p>1 kg</p>
+                                            <p>$11.50</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="modal-footer d-block justify-content-around">
+
+                        <a href="#" class="btn addtocart btn-block">
+                            <i class="fa fa-shopping-cart pr-1"></i>Add to cart</a>
+                        <p class="text-muted text-center">50 items available</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- card 7 ex-item -->
+        <div class="modal fade" id="itemex7" tabindex="-1" role="dialog"
+            aria-labelledby="itemex7" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                    <div class="mx-3">
+                        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button> -->
+
+
+                        <div class="d-flex flex-row align-items-center justify-content-between flex-wrap">
+                            <div class="mx-auto">
+
+                                <div class="imgouter d-flex mx-auto justify-content-center"> <img
+                                        src="image/imageex7.jpg" class="imgitem1 mx-auto" alt="">
+                                    </div>
+                                    <p class="text-muted text-center">Fudged Cake</p>
+                            </div>
+
+
+                            <div class="d-flex flex-row justify-content-center">
+                                <div class="contents">
+                                    <p class="align-item-center">Juice is a drink made from the extraction or pressing
+                                        of the natural liquid contained in fruit and vegetables.</p>
+                                    <div class="d-flex justify-content-around">
+                                        <div>
+                                            <p class="strong">Category</p>
+                                            <p class="strong">Seller</p>
+                                            <p class="strong">Quantity</p>
+                                            <p class="strong">Price</p>
+                                        </div>
+                                        <div>
+                                            <p class="card p- text-center text-muted">Cake</p>
+                                            <p>Bakery-Shop</p>
+                                            <p>1 Kg</p>
+                                            <p>$1.80</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="modal-footer d-block justify-content-around">
+
+                        <a href="#" class="btn addtocart btn-block">
+                            <i class="fa fa-shopping-cart pr-1"></i>Add to cart</a>
+                        <p class="text-muted text-center">50 items available</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- card 8 ex-item -->
+        <div class="modal fade" id="itemex8" tabindex="-1" role="dialog"
+            aria-labelledby="itemex8" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                    <div class="mx-3">
+                        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button> -->
+
+
+                        <div class="d-flex flex-row align-items-center justify-content-between flex-wrap">
+                            <div class="mx-auto">
+
+                                <div class="imgouter d-flex mx-auto justify-content-center"> <img
+                                        src="image/imageex8.jpg" class="imgitem1 mx-auto" alt="">
+                                    </div>
+                                    <p class="text-muted text-center">Rasberry Cake</p>
+                            </div>
+
+
+                            <div class="d-flex flex-row justify-content-center">
+                                <div class="contents">
+                                    <p class="align-item-center">Juice is a drink made from the extraction or pressing
+                                        of the natural liquid contained in fruit and vegetables.</p>
+                                    <div class="d-flex justify-content-around">
+                                        <div>
+                                            <p class="strong">Category</p>
+                                            <p class="strong">Seller</p>
+                                            <p class="strong">Quantity</p>
+                                            <p class="strong">Price</p>
+                                        </div>
+                                        <div>
+                                            <p class="card p- text-center text-muted">Cake</p>
+                                            <p>Bakery-Shop</p>
+                                            <p>1 kg</p>
+                                            <p>$12.00 &nbsp;<s class="text-muted">$15.00</s></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="modal-footer d-block justify-content-around">
+
+                        <a href="#" class="btn addtocart btn-block">
+                            <i class="fa fa-shopping-cart pr-1"></i>Add to cart</a>
+                        <p class="text-muted text-center">50 items available</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- card 9 ex-item -->
+        <div class="modal fade" id="itemex9" tabindex="-1" role="dialog"
+            aria-labelledby="itemex9" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                    <div class="mx-3">
+                        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button> -->
+
+                        <div class="d-flex flex-row align-items-center justify-content-between flex-wrap">
+                            <div class="mx-auto">
+
+                                <div class="imgouter d-flex mx-auto justify-content-center"> <img
+                                        src="image/imageex9.jpg" class="imgitem1 mx-auto" alt="">
+                                    </div>
+                                    <p class="text-muted text-center">Black Forest</p>
+                            </div>
+
+
+                            <div class="d-flex flex-row justify-content-center">
+                                <div class="contents">
+                                    <p class="align-item-center">Juice is a drink made from the extraction or pressing
+                                        of the natural liquid contained in fruit and vegetables.</p>
+                                    <div class="d-flex justify-content-around">
+                                        <div>
+                                            <p class="strong">Category</p>
+                                            <p class="strong">Seller</p>
+                                            <p class="strong">Quantity</p>
+                                            <p class="strong">Price</p>
+                                        </div>
+                                        <div>
+                                            <p class="card p- text-center text-muted">Cake</p>
+                                            <p>Bakery-Shop</p>
+                                            <p>1 piece</p>
+                                            <p>$4.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="modal-footer d-block justify-content-around">
+
+                        <a href="#" class="btn addtocart btn-block">
+                            <i class="fa fa-shopping-cart pr-1"></i>Add to cart</a>
+                        <p class="text-muted text-center">50 items available</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- card 10 ex-item -->
+        <div class="modal fade" id="itemex10" tabindex="-1"  role="dialog"
+            aria-labelledby="itemex10" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                    <div class="mx-3">
+                        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button> -->
+
+
+                        <div class="d-flex flex-row align-items-center justify-content-center flex-wrap">
+                            <div class="mx-auto">
+
+                                <div class="imgouter d-flex mx-auto justify-content-center"> <img
+                                        src="image/imageex10.jpg" class="imgitem1 mx-auto" alt="">
+                                    </div>
+                                    <p class="text-muted text-center">Choco Cupcake</p>
+                            </div>
+
+
+                            <div class="d-flex flex-row ">
+                                <div class="contents">
+                                    <p class="align-item-center">Juice is a drink made from the extraction or pressing
+                                        of the natural liquid contained in fruit and vegetables.</p>
+                                    <div class="d-flex justify-content-around">
+                                        <div>
+                                            <p class="strong">Category</p>
+                                            <p class="strong">Seller</p>
+                                            <p class="strong">Quantity</p>
+                                            <p class="strong">Price</p>
+                                        </div>
+                                        <div>
+                                            <p class="card p- text-center text-muted">Cake</p>
+                                            <p>Bakery-Shop</p>
+                                            <p>100ml</p>
+                                            <p><b> $7.00</b></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="modal-footer d-block justify-content-around">
+
+                        <a href="#" class="btn addtocart btn-block">
+                            <i class="fa fa-shopping-cart pr-1"></i>Add to cart</a>
+                        <p class="text-muted text-center">50 items available</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- card 11 ex-item -->
+        <div class="modal fade" id="itemex11" tabindex="-1"  role="dialog"
+            aria-labelledby="itemex11" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                    <div class="mx-3">
+                        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button> -->
+
+
+                        <div class="d-flex flex-row align-items-center justify-content-between flex-wrap">
+                            <div class="mx-auto">
+                                <div class="imgouter d-flex mx-auto justify-content-center"> <img
+                                        src="image/imageex11.jpg" class="imgitem1 mx-auto" alt="">
+                                    </div>
+                                    <p class="text-muted text-center">Wheat Bread</p>
+
+                            </div>
+
+
+                            <div class="d-flex flex-row justify-content-center">
+                                <div class="contents">
+                                    <p class="align-item-center">Juice is a drink made from the extraction or pressing
+                                        of the natural liquid contained in fruit and vegetables.</p>
+                                    <div class="d-flex justify-content-around">
+                                        <div>
+                                            <p class="strong">Category</p>
+                                            <p class="strong">Seller</p>
+                                            <p class="strong">Quantity</p>
+                                            <p class="strong">Price</p>
+                                        </div>
+                                        <div>
+                                            <p class="card p- text-center text-muted">Bread</p>
+                                            <p>Bakery-Shop</p>
+                                            <p>1 Packet</p>
+                                            <p>$18</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="modal-footer d-block justify-content-around">
+
+                        <a href="#" class="btn addtocart btn-block">
+                            <i class="fa fa-shopping-cart pr-1"></i>Add to cart</a>
+                        <p class="text-muted text-center">50 items available</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- card 12 ex-item -->
+        <div class="modal fade" id="itemex12" tabindex="-1"     role="dialog"
+            aria-labelledby="itemex12" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                    <div class="mx-2">
+                        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button> -->
+
+
+                        <div class="d-flex flex-row align-items-center justify-content-between flex-wrap">
+                            <div class="mx-auto">
+
+
+                                <div class="imgouter d-flex mx-auto justify-content-center">
+                                    <img
+                                        src="image/imageex12.jpg" class="imgitem1 mx-auto" alt="">
+                                    </div>
+                                    <p class="text-muted text-center">Rice Bread </p>
+                            </div>
+<hr>
+
+                            <div class="d-flex flex-row justify-content-center">
+                                <div class="contents">
+                                    <p class="align-item-center px-3">Juice is a drink made from the extraction or pressing
+                                        of the natural liquid contained in fruit and vegetables.</p>
+                                    <div class="d-flex justify-content-around">
+                                        <div>
+                                            <p class="strong">Category</p>
+                                            <p class="strong">Seller</p>
+                                            <p class="strong">Quantity</p>
+                                            <p class="strong">Price</p>
+                                        </div>
+                                        <div>
+                                            <p class="card p- text-center text-muted">Bread</p>
+                                            <p>Bakery-Shop</p>
+                                            <p>100ml</p>
+                                            <p>$22</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="modal-footer d-block justify-content-around">
+
+                        <a href="#" class="btn addtocart btn-block">
+                            <i class="fa fa-shopping-cart pr-1"></i>Add to cart</a>
+                        <p class="text-muted text-center">50 items available</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- Social lower end  -->
+
+    <!-- login pop uppp  -->
+    <div class="modal" id="loginpop" aria-labelledby="loginpop" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="mx-auto">
+                    <div class="p-3 loginpopinsd mx-auto">
+                        <div class="d-flex justify-content-center">
+                            <img src="image/PickBazar.webp" width="160" class="p-2 " alt="">
+
+                        </div>
+                        <p class="text-muted p-2 text-center">Login with your Email and Password</p>
+                        <form id="submitForm" action="/login" method="post">
+                            <input type="hidden">
+                            <div class="form-group required  text-muted">
+                                <label for="username">Email</label>
+                                <input type="text" class="form-control text-lowercase" placeholder="abcdefgh@abcd.com" id="username" required=""
+                                    name="username" value="">
+                            </div>
+                            <div class="form-group required">
+                                <label class="d-flex flex-row align-items-center text-muted"  for="password">Password
+                                    <a class="ml-auto border-link small-xl fgt" style="color:#0d9176 ;"
+                                        href="/forget-password">Forget?</a></label>
+                                <input type="password" class="form-control" required="" placeholder="********" id="password" name="password"
+                                    value="">
+                            </div>
+
+                            <div class="form-group pt-1">
+                                <button class="btn btn-block lgbtn"
+                                    style=" background-color: #0d9176;
+                                        color: #fff;
+                                        font-weight: bold;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"
+                                    type="submit">Log In</button>
+                            </div>
+                            <hr class="hr-text" data-content="OR">
+                            <div class="text-center">
+                                <span class="text-muted">Or</span>
+                                <hr>
+                            </div>
+                        </form>
+                        <div class="form-group pt-1">
+                            <a href=""> <button class="btn btn-primary btngg btn-block" type="button"><img
+                                        src="image/icon/google-24.png" class="mx-1 my-auto" alt="" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color: #fff;
+                                                font-weight: bold;">Login with Google</button></a>
+                        </div>
+                        <div class="form-group pt-1">
+                            <a href="">
+                                <button class="btn btnmbl btn-secondary btn-block"
+                                    style="color: #fff;
+                                    font-weight: bold;
+                                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; " type="submit"><img
+                                        src="image/icon/phone-24.png" class="mx-1 my-auto" alt=""> Login with Mobile
+                                    number</button></a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- login pop up close -->
+
+
+
+
+<!-- for search copied -->
+
+
+
+
+
+
+<!-- for search copied -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="d-block d-sm-block  d-lg-none d-md-block fixed-bottom">
+        <div class="list-group-flush d-flex justify-content-around bg-white">
+          
+           <button class="list-group-item d-flex list-group-item-action"  onclick="openNav()"><img src="image/icon/bulleted-list-24.png" alt=""></button>
+
+
+            <button type="button  dropdown-toggle" class="list-group-item d-flex list-group-item-action" data-target="#searchsmall">
+                    <img src="image/icon/search-24.png" class="w-10 mx-auto" alt=""></button>
+
+            <button type="button" class="list-group-item d-flex list-group-item-action actv"> <a href="#body">
+                    <img src="image/icon/home-page-24.png" class="w-10 mx-auto" alt=""></a></button>
+
+            <button type="button" class="list-group-item d-flex list-group-item-action"><a href=""></a><img
+                    src="image/icon/shopping-bag-24.png" class="w-10 mx-auto" alt=""></a></button>
+
+            <button type="button" data-toggle="modal" data-target="#loginpop"
+                class="list-group-item d-flex list-group-item-action"><img src="image/icon/user-24.png"
+                    class="w-10 mx-auto" alt=""></button>
+        </div>
+    </footer>
+
+
+    <!-- side nav bar -->
+ <div id="myNav" class="overlay bg-white">
+    <img src="image/PickBazar.webp" width="40%" style="top:20% ;" alt="">
+
+<a href="javascript:void(0)" class="closebtn " onclick="closeNav()">&times;</a>
+
+        <div class="overlay-content">
+        
+            <a href="#">Shops</a>
+            <a href="#">Manufactureres/Publishers</a>
+            <a href="#">Authors</a>
+            <a href="#">Offers</a>
+            <a href="#">FAQ</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+<!-- side nave bar ends  -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- filter overlay content -->
+<div id="myFilter" class="filter">
+
+    <a href="javascript:void(0)" class="closebtn" onclick="closeFilter()">&times;</a>
+
+    <div class="filter-content">
+      <a href="#">Juice</a>
+      <a href="#">Cookies</a>
+      <a href="#">Coffee & Tea</a>
+      <a href="#">Cake</a>
+    </div>
+  </div>
+
+  <!-- filter overlay cotent end -->
+
+
+
+
+
+
+
+
+
+
+    <!-- side shopping button -->
+    <div class="asd position-fixed d-none d-lg-block">
+        <button type="button" class="btn text-white btn-lg"   >
+            <div><i class="fa fa-shopping-cart pr-2"></i>0 item</div>
+            <p class="asdp text-sm">$0.00</p>
+        </button>
+    </div>
+ <!-- side shopping button ends -->
+
+
+
+
+
+
+
+
+    <!-- footer -->
+    <!-- java script -->
+    <script src="t.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <!-- java script close -->
+</body>
+
+</html>
